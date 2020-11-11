@@ -9,22 +9,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+public class Main_Activity extends AppCompatActivity {
 
     Button standardButton,scientificButton;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        standardButton = (Button)findViewById(R.id.standardButton);
-        scientificButton = (Button)findViewById(R.id.scientificButton);
+        setContentView(R.layout.activity_main_);
+        standardButton = findViewById(R.id.standardButton);
+        scientificButton = findViewById(R.id.scientificButton);
         standardButton.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this, StandardActivity.class);
+            Intent i = new Intent(Main_Activity.this, StandardActivity.class);
             startActivity(i);
         });
         scientificButton.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this, ScientificActivity.class);
+            Intent i = new Intent(Main_Activity.this, ScientificActivity.class);
             startActivity(i);
         });
         fab = findViewById(R.id.fab);

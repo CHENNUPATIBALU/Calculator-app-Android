@@ -195,9 +195,9 @@ public class ScientificActivity extends AppCompatActivity {
         });
 
         bPi.setOnClickListener(view -> {
-            t.setText(""+Math.PI);
+            t.setText(t.getText()+""+Math.PI);
             choice = 8;
-            calculate = true;
+            calculate = false;
         });
 
         bModulusOfX.setOnClickListener(view -> {
@@ -262,7 +262,7 @@ public class ScientificActivity extends AppCompatActivity {
                     }
                     if(choice==8)
                     {
-                        t.setText(""+Double.parseDouble(t.getText().toString())*Math.PI);
+                        t.setText(""+Math.PI*Double.parseDouble(t.getText().toString()));
                     }
                     if(choice==9)
                     {

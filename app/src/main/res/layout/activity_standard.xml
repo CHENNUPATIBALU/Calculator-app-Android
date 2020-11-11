@@ -21,7 +21,7 @@
         app:layout_column="4"
         app:layout_constraintBottom_toTopOf="@+id/modButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/gridLayout3"
         app:layout_constraintTop_toBottomOf="@+id/standardCalciTextNumber"
         app:layout_constraintVertical_bias="1.0"
@@ -51,8 +51,8 @@
 
     <Button
         android:id="@+id/equalButton"
-        android:layout_width="53dp"
-        android:layout_height="109dp"
+        android:layout_width="52dp"
+        android:layout_height="126dp"
         android:layout_marginTop="436dp"
         android:background="#5B89A1"
         android:fontFamily="sans-serif-black"
@@ -61,7 +61,7 @@
         app:layout_column="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toEndOf="@+id/gridLayout3"
         app:layout_constraintTop_toBottomOf="@+id/standardCalciTextNumber"
         app:layout_constraintVertical_bias="1.0"
@@ -87,7 +87,7 @@
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout3"
         android:layout_width="352dp"
-        android:layout_height="300dp"
+        android:layout_height="306dp"
         android:background="@color/design_default_color_secondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
