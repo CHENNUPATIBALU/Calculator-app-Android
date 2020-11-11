@@ -21,6 +21,7 @@ public class ScientificActivity extends AppCompatActivity {
     Button bEqual,bPlusMinus,bDot,bAC,bClear,bPercent,bMod,bBracket,bSine,bCosine,bTan,bLog,bSquareRoot,bOneByX;
     Button bFactorial,bLn,bModulusOfX,b10PowerX,bPi,bXPowerY;
     String input = "";
+    String operators[];
     EditText t;
     boolean calculate = false;
     int choice = 0;
@@ -66,6 +67,7 @@ public class ScientificActivity extends AppCompatActivity {
         bPi = findViewById(R.id.piButton);
         bXPowerY = findViewById(R.id.xPowerY);
 
+        operators = new String[]{"+","-","*","/","%"};
 
 
         t = findViewById(R.id.standardCalciTextNumber);
@@ -85,19 +87,19 @@ public class ScientificActivity extends AppCompatActivity {
 
         // Adding onClick Listeners to MathOperation Buttons
         bPlus.setOnClickListener(view -> {
-            t.setText(t.getText() + "+");
+            t.setText(t.getText() + operators[0]);
             calculate = false;
         });
         bMinus.setOnClickListener(view -> {
-            t.setText(t.getText() + "-");
+            t.setText(t.getText() + operators[1]);
             calculate = false;
         });
         bMultiply.setOnClickListener(view -> {
-            t.setText(t.getText() + "*");
+            t.setText(t.getText() + operators[2]);
             calculate = false;
         });
         bDivision.setOnClickListener(view -> {
-            t.setText(t.getText() + "/");
+            t.setText(t.getText() + operators[3]);
             calculate = false;
         });
         bDot.setOnClickListener(view -> {
@@ -118,7 +120,7 @@ public class ScientificActivity extends AppCompatActivity {
         });
 
         bMod.setOnClickListener(view -> {
-            t.setText(t.getText()+"%");
+            t.setText(t.getText()+operators[4]);
             calculate = false;
         });
         bPercent.setOnClickListener(view -> {
@@ -138,7 +140,17 @@ public class ScientificActivity extends AppCompatActivity {
         });
 
         bBracket.setOnClickListener(view -> {
-            t.setText(t.getText()+"()");
+            for(int i=0;i<operators.length;i++)
+            {
+                if(t.getText().toString().charAt(0)==operators[i].charAt(0))
+                {
+                    t.setText(t.getText()+")");
+                    break;
+                }
+                else
+                    t.setText(t.getText()+"(");break;
+            }
+
         });
 
         bSine.setOnClickListener(view -> {
