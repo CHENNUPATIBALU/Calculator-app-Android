@@ -53,8 +53,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ScientificCalculatorActivity"
-            android:label="Scientific Calculator"
-            android:screenOrientation="portrait" />
+            android:label="Scientific Calculator" />
         <activity
             android:name=".Main_Activity"
             android:label="Calculator">
@@ -66,8 +65,7 @@
         </activity>
         <activity
             android:name=".StandardActivity"
-            android:label="Standard Calculator"
-            android:screenOrientation="portrait" />
+            android:label="Standard Calculator" />
     </application>
 
 </manifest>
