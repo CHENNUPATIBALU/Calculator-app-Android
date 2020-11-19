@@ -10,6 +10,39 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
+    <compatible-screens>
+
+        <!-- all small size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+    </compatible-screens>
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -18,17 +51,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main_Activity">
+        <activity
+            android:name=".ScientificCalculatorActivity"
+            android:label="Scientific Calculator"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_Activity"
+            android:label="Calculator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ScientificActivity"
-            android:label="Scientific Calculator"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".StandardActivity"
             android:label="Standard Calculator"

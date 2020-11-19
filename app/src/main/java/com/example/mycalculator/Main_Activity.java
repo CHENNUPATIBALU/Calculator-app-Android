@@ -24,7 +24,7 @@ public class Main_Activity extends AppCompatActivity {
             startActivity(i);
         });
         scientificButton.setOnClickListener(view -> {
-            Intent i = new Intent(Main_Activity.this, ScientificActivity.class);
+            Intent i = new Intent(Main_Activity.this, ScientificCalculatorActivity.class);
             startActivity(i);
         });
         fab = findViewById(R.id.fab);

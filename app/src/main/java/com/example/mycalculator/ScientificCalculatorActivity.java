@@ -2,20 +2,17 @@ package com.example.mycalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mycalculator.R;
-
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
-public class ScientificActivity extends AppCompatActivity {
+public class ScientificCalculatorActivity extends AppCompatActivity {
 
     Button b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,bPlus,bMinus,bMultiply,bDivision,bSquare;
     Button bEqual,bPlusMinus,bDot,bAC,bClear,bPercent,bMod,bBracket,bSine,bCosine,bTan,bLog,bSquareRoot,bOneByX;
@@ -28,7 +25,7 @@ public class ScientificActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scientifc);
+        setContentView(R.layout.activity_scientific_calculator);
 
         //Referencing Buttons
         b0 = findViewById(R.id.zeroButton);
@@ -70,7 +67,7 @@ public class ScientificActivity extends AppCompatActivity {
         operators = new String[]{"+","-","*","/","%"};
 
 
-        t = findViewById(R.id.standardCalciTextNumber);
+        t = findViewById(R.id.scientificCalciTextNumber);
         t.setBackgroundColor(Color.WHITE);
 
         //Adding onClick Listeners to Numeric Buttons

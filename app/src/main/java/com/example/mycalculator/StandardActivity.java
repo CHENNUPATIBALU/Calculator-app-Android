@@ -2,10 +2,8 @@ package com.example.mycalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -48,7 +46,7 @@ public class StandardActivity extends AppCompatActivity {
         bMod = findViewById(R.id.modButton);
 
 
-        t = findViewById(R.id.standardCalciTextNumber);
+        t = findViewById(R.id.scientificCalciTextNumber);
         t.setBackgroundColor(Color.WHITE);
 
         //Adding onClick Listeners to Numeric Buttons
