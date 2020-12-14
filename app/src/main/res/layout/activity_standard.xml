@@ -8,8 +8,9 @@
 
     <Button
         android:id="@+id/zeroButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -17,16 +18,19 @@
         android:foregroundTintMode="screen"
         android:text="@string/_0"
         android:textSize="30sp"
+
         app:layout_column="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/threeButton"
-        app:layout_constraintStart_toEndOf="@+id/plusByMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_row="5" />
 
     <Button
         android:id="@+id/plusByMinus"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -35,15 +39,17 @@
         android:text="@string/plusMinus"
         android:textSize="30sp"
         app:layout_column="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/zeroButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_row="5" />
 
     <EditText
         android:id="@+id/scientificCalciTextNumber"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/_0"
@@ -51,33 +57,32 @@
         android:singleLine="true"
         android:textAlignment="viewEnd"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/modButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/equalButton"
         android:layout_width="56dp"
         android:layout_height="237dp"
+        android:layout_marginTop="364dp"
         android:background="#5B89A1"
         android:fontFamily="sans-serif-black"
         android:text="@string/equal"
         android:textSize="30sp"
         app:layout_column="0"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.997"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_row="0" />
 
     <Button
         android:id="@+id/dotButton"
         android:layout_width="88dp"
         android:layout_height="61dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginTop="540dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -85,15 +90,16 @@
         android:foregroundTintMode="screen"
         android:text="@string/dot"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equalButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/zeroButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/additionButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -101,13 +107,14 @@
         android:foregroundTintMode="screen"
         android:text="@string/plus"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equalButton"
-        app:layout_constraintStart_toEndOf="@+id/dotButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/oneButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -118,12 +125,16 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/plusByMinus"
         app:layout_constraintEnd_toStartOf="@+id/twoButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/twoButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -131,14 +142,16 @@
         android:foregroundTintMode="screen"
         android:text="@string/_2"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/zeroButton"
-        app:layout_constraintEnd_toStartOf="@+id/threeButton"
-        app:layout_constraintStart_toEndOf="@+id/oneButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/threeButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -146,14 +159,16 @@
         android:foregroundTintMode="screen"
         android:text="@string/_3"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/dotButton"
-        app:layout_constraintEnd_toStartOf="@+id/subtractionButton"
-        app:layout_constraintStart_toEndOf="@+id/zeroButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/subtractionButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -161,13 +176,14 @@
         android:foregroundTintMode="screen"
         android:text="@string/minus"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/additionButton"
-        app:layout_constraintEnd_toStartOf="@+id/equalButton"
-        app:layout_constraintStart_toEndOf="@+id/threeButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/fourButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -182,7 +198,7 @@
 
     <Button
         android:id="@+id/fiveButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -197,7 +213,7 @@
 
     <Button
         android:id="@+id/sixButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -212,7 +228,7 @@
 
     <Button
         android:id="@+id/percentButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -227,7 +243,7 @@
 
     <Button
         android:id="@+id/sevenButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -242,7 +258,7 @@
 
     <Button
         android:id="@+id/eightButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -257,7 +273,7 @@
 
     <Button
         android:id="@+id/nineButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -272,7 +288,7 @@
 
     <Button
         android:id="@+id/multiplyButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
@@ -289,6 +305,7 @@
         android:id="@+id/modButton"
         android:layout_width="97dp"
         android:layout_height="56dp"
+        android:layout_marginTop="308dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -296,15 +313,17 @@
         android:foregroundTintMode="screen"
         android:text="@string/mod"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/sevenButton"
-        app:layout_constraintEnd_toStartOf="@+id/divideButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/divideButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -312,16 +331,15 @@
         android:foregroundTintMode="screen"
         android:text="@string/division"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/eightButton"
         app:layout_constraintEnd_toStartOf="@+id/deleteButton"
-        app:layout_constraintStart_toEndOf="@+id/modButton"
-        app:layout_constraintTop_toBottomOf="@+id/scientificCalciTextNumber"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/deleteButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="@color/design_default_color_surface"
         android:backgroundTintMode="screen"
         android:fontFamily="sans-serif-black"
@@ -329,15 +347,12 @@
         android:foregroundTintMode="screen"
         android:text="@string/del"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/nineButton"
         app:layout_constraintEnd_toStartOf="@+id/allClearButton"
-        app:layout_constraintStart_toEndOf="@+id/divideButton"
-        app:layout_constraintTop_toBottomOf="@+id/scientificCalciTextNumber"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/scientificCalciTextNumber" />
 
     <Button
         android:id="@+id/allClearButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#FF5722"
         android:fontFamily="sans-serif-black"
@@ -345,9 +360,8 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/nineButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/deleteButton"
         app:layout_constraintTop_toBottomOf="@+id/scientificCalciTextNumber"
-        app:layout_constraintVertical_bias="0.963" />
+        app:layout_constraintVertical_bias="0.978" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
